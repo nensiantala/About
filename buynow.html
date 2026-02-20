@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+     <!--header section start -->
+    <div class="container-xl">
+        <div class="header_section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="input-group search-bar">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                    aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--header section end -->
+
+    <div class="buy">
+    <div class="container mt-5">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <img id="productImage" src="" alt="Product Image" class="img-fluid mb-3">
+            </div>
+            <div class="col-md-6">
+                <h5 id="productTitle"></h5>
+                <p id="productMaterial"></p>
+                <p id="productRating"></p>
+                <p id="productMRP"></p>
+                <p id="productDiscount"></p>
+                <p id="productPrice"></p>
+                <button type="button" class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h3 class="useful_text">About</h3>
+                    <p class="footer_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h3 class="useful_text">Menu</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="useful_text">Useful Link</h1>
+                    <p class="dummy_text">Adipiscing Elit, sed do Eiusmod Tempor incididunt </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="useful_text">Contact Us</h1>
+                    <div class="location_text">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span
+                                        class="padding_left_10">Address : Loram Ipusm</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call :
+                                        +01 1234567890</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email
+                                        : demo@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html
+                    Templates</a></p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get('title');
+            const img = urlParams.get('img');
+            const material = urlParams.get('material');
+            const rating = urlParams.get('rating');
+            const ratingsCount = urlParams.get('ratingsCount');
+            const mrp = urlParams.get('mrp');
+            const discount = urlParams.get('discount');
+            const price = urlParams.get('price');
+
+            document.getElementById('productTitle').textContent = title;
+            document.getElementById('productImage').src = img;
+            document.getElementById('productMaterial').textContent = 'Material: ' + material;
+            document.getElementById('productRating').textContent = 'Rating: ' + rating + ' | ' + ratingsCount + ' Ratings';
+            document.getElementById('productMRP').textContent = 'Maximum Retail Price: ₹' + mrp + ' (Incl. of all taxes)';
+            document.getElementById('productDiscount').textContent = 'Discount: ' + discount + ' OFF';
+            document.getElementById('productPrice').textContent = 'Price: ' + price;
+        });
+
+        function addToCart() {
+            alert('Added to cart!');
+        }
+
+    </script>
+    
+</body>
+
+</html>

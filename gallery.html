@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Gallery</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+
+</head>
+
+<body>
+    <!--header section start -->
+    <div class="container-xl">
+        <div class="header_section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cart.html">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="input-group search-bar">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                                    aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--header section end -->
+    <!-- gallery section start -->
+    <div class="gallery_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="gallery_title">Our Gallery</h1>
+                    <p class="gallery_text">Welcome to our Gallery! Here, you'll find a stunning array of fashion items
+                        that define elegance, style, and quality.</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-1.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 1</h5>
+                                    <p class="card-text">$29.99</p>
+                                    <!-- Adjust data attributes to pass product details -->
+                                    <a href="buynow.html?title=Cloth%20Title%201&img=images/img-1.jpeg&material=Cotton&rating=4.4&ratingsCount=109&mrp=1299&discount=75%&price=29.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <!-- Modify the Add to Cart button in each product card -->
+<button type="button" class="btn btn-primary add-to-cart-btn"
+    data-title="Cloth Title" data-price="29.99" data-img="images/img-1.jpeg">Add to Cart</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-2.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 2</h5>
+                                    <p class="card-text">$29.99</p>
+                                    <!-- Adjust data attributes to pass product details via query parameters -->
+                                    <a href="buynow.html?title=Cloth%20Title%202&img=images/img-2.jpeg&material=Cotton&rating=4.5&ratingsCount=95&mrp=1399&discount=70%&price=29.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 2" data-price="$29.99" data-img="images/img-2.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-4.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 3</h5>
+                                    <p class="card-text">$49.99</p>
+                                    <!-- Adjust data attributes to pass product details -->
+                                    <a href="buynow.html?title=Cloth%20Title%203&img=images/img-4.jpeg&material=Silk&rating=4.8&ratingsCount=82&mrp=1899&discount=75%&price=49.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 3" data-price="$49.99" data-img="images/img-4.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-5.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 4</h5>
+                                    <p class="card-text">$29.99</p>
+                                    <!-- Adjust data attributes to pass product details -->
+                                    <a href="buynow.html?title=Cloth%20Title%204&img=images/img-5.jpeg&material=Cotton&rating=4.4&ratingsCount=109&mrp=1299&discount=75%&price=29.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 4" data-price="$29.99" data-img="images/img-5.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-6.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 5</h5>
+                                    <p class="card-text">$299</p>
+                                    <!-- Adjust data attributes to pass product details -->
+                                    <a href="buynow.html?title=Cloth%20Title%205&img=images/img-6.jpeg&material=Silk&rating=4.2&ratingsCount=95&mrp=2499&discount=70%&price=299"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 5" data-price="$299" data-img="images/img-6.jpeg">Add to
+                                        Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-3.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 6</h5>
+                                    <p class="card-text">$19.99</p>
+                                    <!-- Adjust data attributes to pass product details -->
+                                    <a href="buynow.html?title=Cloth%20Title%206&img=images/img-3.jpeg&material=Polyester&rating=4.0&ratingsCount=120&mrp=999&discount=50%&price=19.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 6" data-price="$19.99" data-img="images/img-3.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="gallery_section_2">
+                    <div class="row">
+                        <!-- Card 4 -->
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-7.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 7</h5>
+                                    <p class="card-text">$29.99</p>
+                                    <a href="buynow.html?title=Cloth%20Title%207&img=images/img-7.jpeg&material=Cotton&rating=4.4&ratingsCount=109&mrp=1299&discount=75%&price=29.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 7" data-price="$29.99" data-img="images/img-7.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-8.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 8</h5>
+                                    <p class="card-text">$29.99</p>
+                                    <a href="buynow.html?title=Cloth%20Title%208&img=images/img-8.jpeg&material=Cotton&rating=4.4&ratingsCount=109&mrp=1299&discount=75%&price=29.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 8" data-price="$29.99" data-img="images/img-8.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="images/img-9.jpeg" class="card-img-top" alt="Cloth Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cloth Title 9</h5>
+                                    <p class="card-text">$29.99</p>
+                                    <a href="buynow.html?title=Cloth%20Title%209&img=images/img-9.jpeg&material=Cotton&rating=4.4&ratingsCount=109&mrp=1299&discount=75%&price=29.99"
+                                        class="btn btn-dark">Buy Now</a>
+                                    <button type="button" class="btn btn-primary add-to-cart-btn"
+                                        data-title="Cloth Title 9" data-price="$29.99" data-img="images/img-9.jpeg">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- gallery section end -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h3 class="useful_text">About</h3>
+                    <p class="footer_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h3 class="useful_text">Menu</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="useful_text">Useful Link</h1>
+                    <p class="dummy_text">Adipiscing Elit, sed do Eiusmod Tempor incididunt </p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <h1 class="useful_text">Contact Us</h1>
+                    <div class="location_text">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><span
+                                        class="padding_left_10">Address : Loram Ipusm</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call :
+                                        +01 1234567890</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email
+                                        : demo@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html
+                    Templates</a></p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+  <script>
+    // JavaScript for gallery.html
+$(document).ready(function () {
+    $('.add-to-cart-btn').on('click', function () {
+        var title = $(this).data('title');
+        var price = $(this).data('price');
+        var img = $(this).data('img');
+
+        // Create an object to represent the product
+        var product = {
+            title: title,
+            price: price,
+            img: img
+        };
+
+        // Retrieve existing cart items from localStorage or initialize an empty array
+        var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add the product to the cart
+        cartItems.push(product);
+
+        // Store the updated cart back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+
+        // Optional: Provide visual feedback to the user that the product was added
+        alert('Product added to cart!');
+    });
+});
+
+  </script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            displayCardItems();
+        });
+
+        function displayCardItems() {
+            const cardItems = JSON.parse(localStorage.getItem('card')) || [];
+            const cardItemsContainer = document.querySelector('.card-items');
+            cardItemsContainer.innerHTML = '';
+
+            let total = 0;
+
+            cardItems.forEach((item, index) => {
+                const cardItem = document.createElement('div');
+                cardItem.classList.add('card-item');
+                cardItem.innerHTML = `
+            <div class="card-item-details">
+                <img src="${item.image}" alt="${item.name}" class="product-image">
+                    <div>
+                        <h4>${item.name}</h4>
+                        <p>Price: ₹${item.price.toFixed(2)}</p>
+                        <div class="card-item-quantity">
+                            <label for="quantity${index}">Quantity:</label>
+                            <input type="number" id="quantity${index}" name="quantity" value="${item.quantity}" min="1" onchange="updateCardItem(${index}, this.value)">
+                        </div>
+                        <p class="card-item-total">Total: ₹${(item.price * item.quantity).toFixed(2)}</p>
+                    </div>
+            </div>
+            <button class="card-item-remove" onclick="removeCardItem(${index})">Remove</button>
+    `;
+                cardItemsContainer.appendChild(cardItem);
+
+                total += item.price * item.quantity;
+            });
+
+            updateCardTotal(total);
+        }
+
+        function removeCardItem(index) {
+            const cardItems = JSON.parse(localStorage.getItem('card')) || [];
+            cardItems.splice(index, 1);
+            localStorage.setItem('card', JSON.stringify(cardItems));
+            displayCardItems();
+        }
+
+        function updateCardItem(index, quantity) {
+            const cardItems = JSON.parse(localStorage.getItem('card')) || [];
+            cardItems[index].quantity = parseInt(quantity);
+            localStorage.setItem('card', JSON.stringify(cardItems));
+            displayCardItems();
+        }
+
+        function updateCardTotal(total) {
+            document.querySelector('.order-summary .order-total').textContent = 'Total: ₹' + total.toFixed(2);
+        }
+    </script>
+
+    </script>
+    <script>function addToCard(name, price, image) {
+            // Retrieve the existing card from localStorage, or initialize it as an empty array if it doesn't exist
+            const card = JSON.parse(localStorage.getItem('card')) || [];
+
+            // Check if the item already exists in the card
+            const existingItem = card.find(item => item.name === name);
+            if (existingItem) {
+                // If the item exists, increment its quantity
+                existingItem.quantity += 1;
+            } else {
+                // If the item does not exist, add it to the card with a quantity of 1
+                card.push({ name, price, image, quantity: 1 });
+            }
+
+            // Save the updated card back to localStorage
+            localStorage.setItem('card', JSON.stringify(card));
+
+            // Show an alert that the item has been added to the card
+            alert(name + ' added to card');
+        }
+    </script> -->
+    <script src="script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.buy-now-btn').on('click', function () {
+                var title = $(this).data('title');
+                var img = $(this).data('img');
+                var material = $(this).data('material');
+                var rating = $(this).data('rating');
+                var ratingsCount = $(this).data('ratings-count');
+                var mrp = $(this).data('mrp');
+                var discount = $(this).data('discount');
+                var price = $(this).data('price');
+
+                $('#modalProductTitle').text(title);
+                $('#modalProductImage').attr('src', img);
+                $('#modalProductMaterial').text('Material: ' + material);
+                $('#modalProductRating').text('Rating: ' + rating + ' | ' + ratingsCount + ' Ratings');
+                $('#modalProductMRP').text('Maximum Retail Price: ₹' + mrp + ' (Incl. of all taxes)');
+                $('#modalProductDiscount').text('Discount: ' + discount + ' OFF');
+                $('#modalProductPrice').text('Price: ' + price);
+
+            });
+        });
+    </script>
+</body>
+
+</html>
